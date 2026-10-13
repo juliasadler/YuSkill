@@ -1,0 +1,1 @@
+{"$schema":"https://anthropic.com/claude-code/marketplace.schema.json","metadata":{"description":"YuSkill 情感实战工具箱官方插件市场","pluginRoot":"./","version":"1.0.0"},"name":"yuskill-marketplace","owner":{"name":"liyu","url":"https://github.com/juliasadler"},"plugins":[{"description":"YuSkill 情感实战工具箱：先接住情绪，再诊断局面，最后给能执行的行动。","name":"yuskill","source":"./","version":"1.0.0"}]}

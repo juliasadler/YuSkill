@@ -15,6 +15,13 @@ npx -y skills add juliasadler/YuSkill -g --all
 
 安装后回到 Agent，输入 `/yuskill` 即可开始。
 
+### Claude Code 插件市场
+
+```bash
+claude plugin marketplace add juliasadler/YuSkill
+claude plugin install yuskill@yuskill-marketplace
+```
+
 ### 手动安装
 
 把本仓库 clone 到 skills 目录：
@@ -29,25 +36,34 @@ git clone https://github.com/juliasadler/YuSkill.git ~/workspace/skills/yuskill
 
 ```
 YuSkill/
-├── SKILL.md                  # 主入口：三步工作流（接住情绪→诊断路由→给行动）
-├── 规则/
-│   ├── 方法论总纲.md          # 十条底层逻辑，看懂权力但不玩弄权力
-│   └── 伦理边界.md            # 禁止清单：什么技巧再有效也不用
-├── 诊断/                      # 7 大诊断模块，按关系进程路由
-│   ├── 认知与吸引力.md
-│   ├── 展示面.md
-│   ├── 搭讪与开场.md
-│   ├── 聊天.md
-│   ├── 约会.md
-│   ├── 关系.md
-│   └── 学习方法.md
-├── 工具/
-│   ├── 实战话术库.md          # 六场景话术，每条标注适用信号灯
-│   └── 信号速查.md            # 红绿灯信号列表+投入度指标，一句话决策表
-├── 档案/
-│   └── 关系档案系统.md        # 对象档案：同意机制+与诊断模块联动
-└── 原子库/
-    └── atoms.jsonl            # 1205 条知识原子（YS_0001 起编号）
+├── .claude-plugin/
+│   ├── plugin.json               # Claude Code 插件清单
+│   └── marketplace.json          # Claude Code 插件市场目录
+├── skills/
+│   └── yuskill/
+│       ├── SKILL.md              # 主入口：三步工作流（接住情绪→诊断路由→给行动）
+│       ├── 规则/
+│       │   ├── 方法论总纲.md      # 十条底层逻辑，看懂权力但不玩弄权力
+│       │   └── 伦理边界.md        # 禁止清单：什么技巧再有效也不用
+│       ├── 诊断/                  # 7 大诊断模块，按关系进程路由
+│       │   ├── 认知与吸引力.md
+│       │   ├── 展示面.md
+│       │   ├── 搭讪与开场.md
+│       │   ├── 聊天.md
+│       │   ├── 约会.md
+│       │   ├── 关系.md
+│       │   └── 学习方法.md
+│       ├── 工具/
+│       │   ├── 实战话术库.md      # 六场景话术，每条标注适用信号灯
+│       │   └── 信号速查.md        # 红绿灯信号列表+投入度指标，一句话决策表
+│       ├── 档案/
+│       │   └── 关系档案系统.md    # 对象档案：同意机制+活跃度管理+与诊断联动
+│       └── 原子库/
+│           └── atoms.jsonl        # 1205 条知识原子（YS_0001 起编号）
+├── README.md
+├── LICENSE
+└── assets/
+    └── qq-group.png
 ```
 
 ## 核心方法论（三句话）
