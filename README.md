@@ -7,10 +7,19 @@ YuSkill 情感实战工具箱：一套内部一致的诊断方法论。先接住
 
 ## 快速开始
 
-把本仓库放到 Muse 的 skills 目录即可使用：
+### 通过 npx 安装（推荐）
 
 ```bash
-# clone 到 skills 目录
+npx -y skills add juliasadler/YuSkill -g --all
+```
+
+安装后回到 Agent，输入 `/yuskill` 即可开始。
+
+### 手动安装
+
+把本仓库 clone 到 skills 目录：
+
+```bash
 git clone https://github.com/juliasadler/YuSkill.git ~/workspace/skills/yuskill
 ```
 
